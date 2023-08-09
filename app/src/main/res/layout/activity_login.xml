@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="60sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        android:id="@+id/mailinpt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/pswrd1"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pswrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            android:singleLine="true"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:passwordToggleEnabled="true"/>
+
+    <Button
+        android:id="@+id/loginBut"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/RegNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Register Now"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>

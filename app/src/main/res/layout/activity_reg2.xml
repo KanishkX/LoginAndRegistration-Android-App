@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reg2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textSize="60sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        android:id="@+id/mailinpt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/paswrdInp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pswrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            android:singleLine="true"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/paswrdInp1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pswrd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TableLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/table"
+        >
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="•" />
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text=" minimum of 6 characters required" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="•"/>
+
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text=" a-z A-Z 0-9 required" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="•" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="One special characters such as ~`!@#$%^*&amp;?" />
+        </TableRow>
+    </TableLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/RegButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

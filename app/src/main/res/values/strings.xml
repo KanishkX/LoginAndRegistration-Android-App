@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="email">Email Address</string>
+    <string name="Password">Enter Password</string>
+    <string name="hintsub">Submit</string>
+    <string name="haven_t_regitered_yet">Haven\'t regitered yet</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">logout</string>
+    <string name="register">REGISTER</string>
+    <string name="register_now">Register Now</string>
+    <string name="head">heading</string>
+</resources>
